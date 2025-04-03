@@ -4,7 +4,7 @@ description: This file contains the services for books, using axios to forward r
 author: Blaise Niyonkuru<blaiseniyonkuru12@gmail.com>
 */
 
-import Book from "../../database/models/book";
+import Book from "../../models/book";
 import apiClient from '../../utils/axois';
 import { CreateBookInput, UpdateBookInput } from './type';
 

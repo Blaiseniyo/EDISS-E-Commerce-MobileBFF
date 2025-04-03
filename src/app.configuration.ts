@@ -14,8 +14,6 @@ declare global {
   }
 }
 import cors from "cors";
-import cookieParser from "cookie-parser";
-import session from "express-session";
 import morgan from "morgan";
 
 import {authenticate} from "./shared/middleware/";
@@ -49,7 +47,6 @@ export const configureApp = (app: Express): Express => {
   app.use(cors(corsOptions));
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
-  app.use(cookieParser());
   app.use(morgan(MORGAN_FORMAT));
   app.use(authenticate);
 

@@ -16,9 +16,6 @@ import routes from "./routes";
 // App configuration
 import { configureApp } from "./app.configuration";
 
-// Associations
-import "./database/models/associations";
-
 // App
 const port = APP_PORT;
 

@@ -4,7 +4,7 @@ description: This file contains the services for customers, using axios to forwa
 author: Blaise Niyonkuru<blaiseniyonkuru12@gmail.com>
 */
 
-import Customer from "../../database/models/customer";
+import Customer from "../../models/customer";
 import apiClient from '../../utils/axois';
 import { CreateCustomerInput } from './types';
 

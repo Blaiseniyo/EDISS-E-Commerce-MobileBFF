@@ -39,14 +39,6 @@ export const authenticate = (req: Request, _res: Response, next: NextFunction) =
       throw new NotAuthorizedError(message || 'Invalid authentication token');
     }
 
-    // Attach the user info to the request for use in later middleware/controllers
-    // if (decodedToken && decodedToken.sub) {
-    //   req.user = {
-    //     username: decodedToken.sub,
-    //     // Add any other needed user properties here
-    //   };
-    // }
-
     next();
   } catch (error) {
     if (error instanceof NotAuthorizedError) {
